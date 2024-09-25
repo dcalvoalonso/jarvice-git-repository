@@ -1,0 +1,41 @@
+{
+    "name": "Hello World App",
+    "description": "A very basic app thay says hello to world.",
+    "author": "Me",
+    "licensed": false,
+    "appdefversion": 2,
+    "classifications": [
+        "Uncategorized"
+    ],
+    "machines": [
+        "*"
+    ],
+    "vault-types": [
+        "FILE",
+        "BLOCK",
+        "BLOCK_ARRAY",
+        "OBJECT"
+    ],
+    "commands": {
+        "Hello": {
+            "path": "/usr/bin/echo",
+            "interactive": false,
+            "name": "Echo with arguments",
+            "description": "Execute /usr/bin/echo with 'Hello World!' as argument.",
+            "parameters": {
+                "message": {
+                    "name": "message",
+                    "description": "hello world message",
+                    "type": "CONST",
+                    "value": "Hello World!",
+                    "positional": true,
+                    "required": true
+                }
+            }
+        }
+    },
+    "image": {
+        "type": "image/png",
+        "data": ""
+    }
+}
